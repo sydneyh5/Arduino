@@ -33,7 +33,7 @@ void setup() {//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 void loop() {//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   // put your main code here, to run repeatedly:
-  lcd.print(" Hello, World!!"); //Output " Hello, World!!" on the first line of the LCD
+  lcd.print("Computer Science & Software Engineering"); //Output " Hello, World!!" on the first line of the LCD
   lcd.setCursor(0, 1); /*Set the (invisible) cursor on the first place second row of the LCD.
                         Cursor values are 0-indexed, 0 would the be the first place.
                         The cursor coordinates are X,Y coordinates.*/
