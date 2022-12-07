@@ -1,3 +1,12 @@
+/*
+ * Programmer: Sydney Hribar 
+ * 12.6.22
+ * Program: LCD Liquid Crystal Display
+ * Resource: https://create.arduino.cc/projecthub/microBob/lcd-liquid-crystal-display-e72c74?ref=search&ref_id=LCD%20liquid%20crystal%20display%20&offset=0
+ */
+
+
+
 #include <LiquidCrystal.h> //Import the LCD library
 //Include^
 //Init
