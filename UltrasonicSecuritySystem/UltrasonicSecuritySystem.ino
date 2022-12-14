@@ -34,20 +34,20 @@ void loop() {
   durationindigit = pulseIn(echoPin, HIGH);
   distanceincm = (durationindigit/5) / 29.1;
  
-  if (distanceincm < 50) {
+  if (distanceincm < 5) {
       digitalWrite(LEDlampGreen, HIGH);
 }
   else {
       digitalWrite(LEDlampGreen, LOW);
   }
   
-  if (distanceincm < 20) {
+  if (distanceincm < 3) {
     digitalWrite(LEDlampYellow, HIGH);
 }
   else {
     digitalWrite(LEDlampYellow,LOW);
   }
-  if (distanceincm < 5) {
+  if (distanceincm < 2) {
     digitalWrite(LEDlampRed, HIGH);
     sound = 1000;
 }
@@ -62,7 +62,7 @@ void loop() {
   else {
     Serial.print(distanceincm);
     Serial.println(" cm");
-    tone(buzzer, sound);
+    tone(soundbuzzer, sound);
   }
   
   delay(300);
