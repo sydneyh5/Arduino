@@ -52,6 +52,7 @@ void loop() {
   }
   if (distanceincm < 4) {
     digitalWrite(LEDlampRed, HIGH);
+    Serial.println("STOP NOW");
     tone(soundbuzzer, sound);
 }
   else {
