@@ -46,6 +46,8 @@ void loop() {
   if (distanceincm <= 6 && distanceincm >= 4) {
     digitalWrite(LEDlampYellow, HIGH);
     Serial.println("Really close Get ready to stop");
+    tone(soundbuzzer, sound = 500);
+    
 }
   else {
     digitalWrite(LEDlampYellow,LOW);
@@ -53,7 +55,7 @@ void loop() {
   if (distanceincm < 4) {
     digitalWrite(LEDlampRed, HIGH);
     Serial.println("STOP NOW");
-    tone(soundbuzzer, sound);
+    tone(soundbuzzer, sound = 1500);
 }
   else {
     digitalWrite(LEDlampRed,LOW);
@@ -61,14 +63,15 @@ void loop() {
   }
  
   if (distanceincm > 10 || distanceincm <= 0){
-    Serial.println("All clear proceed forward");
+    Serial.println("Vehicle has not been detected yet proceed forward");
     //noTone(soundbuzzer);
   }
   else {
     Serial.print(distanceincm);
     Serial.println(" cm");
+    Serial.println("");
     
   }
   
-  delay(300);
+  delay(1000);
 }
