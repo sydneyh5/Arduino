@@ -37,13 +37,15 @@ void loop() {
   if (distanceincm <= 10 && distanceincm >= 7) {
       digitalWrite(LEDlampGreen, HIGH);
       Serial.println("Getting close proceed with caution");
+      
 }
   else {
       digitalWrite(LEDlampGreen, LOW);
   }
   
-  if (distanceincm < 7) {
+  if (distanceincm <= 6 && distanceincm >= 4) {
     digitalWrite(LEDlampYellow, HIGH);
+    Serial.println("Really close Get ready to stop");
 }
   else {
     digitalWrite(LEDlampYellow,LOW);
